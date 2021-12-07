@@ -104,7 +104,6 @@ function checkForToken(){
 function getToken(status){
   const authEndpoint = 'https://accounts.spotify.com/authorize';
   const scopes = [
-    'user-read-birthdate',
     'user-read-email',
     'user-read-private',
     'app-remote-control',
