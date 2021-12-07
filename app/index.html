@@ -11,6 +11,8 @@
     <meta name="theme-color" content="#0e0e0e">
     <link rel="stylesheet" href="../css/master.css">
     <title>GROOVOX - Spotify Jukebox</title>
+
+    <link rel="stylesheet" href="../dist/kioskBoard/kioskboard-1.4.0.min.css" />
   </head>
   <body onload="getToken('init')">
     <div id="tapstart">
@@ -35,7 +37,7 @@
     <main>
       <section id="browser">
         <div class="searchbar">
-          <input id="searchInput" type="text" placeholder="Search for a song" name="" value="">
+          <input id="searchInput" type="text" placeholder="Search for a song" name="" value="" class="js-virtual-keyboard" data-kioskboard-type="keyboard" data-kioskboard-specialcharacters="false">
           <button type="button" onclick="trackSearch()" class="search-button" name="button">Search</button>
         </div>
         <section id="warnings">
@@ -78,6 +80,8 @@
     </section>
     <script src="https://sdk.scdn.co/spotify-player.js"></script>
   </body>
+  <!-- Load the onscreen Keyboard -->
+  <script src="..dist/kioskBoard/kioskboard-1.4.0.min.js"></script>
   <!-- Load the config constants -->
   <script src="../js/config.js" charset="utf-8"></script>
   <!-- Load the APP -->
