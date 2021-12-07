@@ -103,8 +103,6 @@ function checkForToken(){
 
 function getToken(status){
   const authEndpoint = 'https://accounts.spotify.com/authorize';
-  const clientId = 'CLIENT ID HERE';
-  const redirectUri = 'DOMAIN HERE/callback';
   const scopes = [
     'user-read-birthdate',
     'user-read-email',
